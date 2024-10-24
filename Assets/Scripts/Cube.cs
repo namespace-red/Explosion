@@ -12,7 +12,7 @@ public class Cube : MonoBehaviour
 
     private Material _material;
     
-    public event Action<Cube> Exploded;
+    public event Action<Cube> Spliting;
     
     public float SplitChance { get; private set; }
     public Explosion Explosion { get; private set; }
@@ -43,12 +43,10 @@ public class Cube : MonoBehaviour
 
         if (chance <= SplitChance)
         {
-            Exploded?.Invoke(this);
+            Spliting?.Invoke(this);
         }
-        else
-        {
-            Explosion.Run();
-        }
+        
+        Explosion.Run();
         
         Destroy(gameObject);
     }

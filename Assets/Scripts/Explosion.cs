@@ -3,40 +3,40 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    private static float _force;
-    private static float _radius;
+    private float _force;
+    private float _radius;
+    private List<Rigidbody> _repelledObjects = new List<Rigidbody>();
     
     public void Init(float force, float radius)
     {
         _force = force;
         _radius = radius;
     }
+
+    public void AddRepelled(Rigidbody repelled)
+        => _repelledObjects.Add(repelled);
     
     public void Run()
     {
-        Vector3 position = transform.position;
+        if (_repelledObjects.Count == 0)
+            TakeRepelled();
         
-        var explodableObjects = GetExplodables(position, _radius);
-        
-        foreach (var explodableObject in explodableObjects)
+        foreach (var repelledObject in _repelledObjects)
         {
-            explodableObject.AddExplosionForce(_force, position, _radius);
+            repelledObject.AddExplosionForce(_force, transform.position, _radius);
         }
     }
 
-    private List<Rigidbody> GetExplodables(Vector3 position, float radius)
+    private void TakeRepelled()
     {
-        Collider[] overlappedColliders = Physics.OverlapSphere(position, radius);
-        var rigidbodies = new List<Rigidbody>();
+        Collider[] overlappedColliders = Physics.OverlapSphere(transform.position, _radius);
 
         foreach (var collider in overlappedColliders)
         {
             if (collider.attachedRigidbody != null)
             {
-                rigidbodies.Add(collider.attachedRigidbody);
+                _repelledObjects.Add(collider.attachedRigidbody);
             }
         }
-
-        return rigidbodies;
     }
 }

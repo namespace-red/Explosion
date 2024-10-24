@@ -45,7 +45,9 @@ public class CubeFactory : MonoBehaviour
         float splitChance = oldCube.SplitChance / _splitChanceModifier;
 
         Cube newCube = Create(position, scale, color, splitChance);
-        newCube.Rigidbody.AddExplosionForce(_explosionForce, oldCube.transform.position, _explosionRadius);
+        
+        oldCube.Explosion.AddRepelled(newCube.Rigidbody);
+        
         return newCube;
     }
 

@@ -11,13 +11,6 @@ public class CubeSpawner : MonoBehaviour
         Spawn();
     }
 
-    private void OnCubeExploded(Cube explodedCube)
-    {
-        explodedCube.Exploded -= OnCubeExploded;
-
-        Spawn(explodedCube);
-    }
-
     private void Spawn(Cube explodedCube = null)
     {
         int spawnCubeNumber = GetSpawnNumber();
@@ -27,10 +20,17 @@ public class CubeSpawner : MonoBehaviour
             Cube newCube = (explodedCube == null) ? _cubeFactory.Create() 
                 : _cubeFactory.Create(explodedCube);
             
-            newCube.Exploded += OnCubeExploded;
+            newCube.Spliting += OnCubeSpliting;
         }
     }
-    
+
+    private void OnCubeSpliting(Cube splitedCube)
+    {
+        splitedCube.Spliting -= OnCubeSpliting;
+
+        Spawn(splitedCube);
+    }
+
     private int GetSpawnNumber()
         => Random.Range(_minSpawnCubs, _maxSpawnCubs + 1);
 }

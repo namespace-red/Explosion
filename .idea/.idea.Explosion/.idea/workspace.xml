@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7ad953e-2651-4ddd-b999-abac70608814" name="Default Changelist" comment="" />
+    <list default="true" id="f7ad953e-2651-4ddd-b999-abac70608814" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Explosion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Explosion/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cube.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cube.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CubeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CubeFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CubeSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CubeSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Explosion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Explosion.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Explosion.cs" root0="FORCE_HIGHLIGHTING" />
@@ -14,11 +23,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/CubeSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ExplosionCalculator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Explosion.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cube.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CubeFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CubeSpawner.cs" />
       </list>
     </option>
   </component>
@@ -41,7 +50,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729789751876</updated>
-      <workItem from="1729789782623" duration="8020000" />
+      <workItem from="1729789782623" duration="8364000" />
+      <workItem from="1729799153964" duration="1909000" />
     </task>
     <servers />
   </component>
