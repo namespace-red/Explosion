@@ -3,10 +3,8 @@ using UnityEngine;
 public class CubeSpawner : MonoBehaviour
 {
     [SerializeField] private CubeFactory _cubeFactory;
-    [SerializeField] private int _minSpawnCubs;
-    [SerializeField] private int _maxSpawnCubs;
-    [SerializeField] private Vector3 _startScale;
-    [SerializeField] private float _startSplitChance;
+    [SerializeField] private int _minSpawnCubs = 2;
+    [SerializeField] private int _maxSpawnCubs = 6;
 
     private void Awake()
     {
@@ -26,7 +24,7 @@ public class CubeSpawner : MonoBehaviour
         
         for (int i = 0; i < spawnCubeNumber; i++)
         {
-            Cube newCube = (explodedCube == null) ? _cubeFactory.Create(_startScale, _startSplitChance) 
+            Cube newCube = (explodedCube == null) ? _cubeFactory.Create() 
                 : _cubeFactory.Create(explodedCube);
             
             newCube.Exploded += OnCubeExploded;
