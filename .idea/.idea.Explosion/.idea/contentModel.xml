@@ -13,7 +13,7 @@
           <e p="Cube.cs" t="Include" />
           <e p="CubeFactory.cs" t="Include" />
           <e p="CubeSpawner.cs" t="Include" />
-          <e p="Explosion.cs" t="Include" />
+          <e p="Exploder.cs" t="Include" />
           <e p="ExplosionCalculator.cs" t="Include" />
         </e>
       </e>

@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f7ad953e-2651-4ddd-b999-abac70608814" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Explosion/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Explosion/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Explosion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Explosion/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cube.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cube.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CubeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CubeFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Explosion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Exploder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ExplosionCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ExplosionCalculator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,17 +36,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Explosion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Exploder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ExplosionCalculator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/ExplosionCalculator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Explosion.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cube.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CubeFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CubeSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Exploder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ExplosionCalculator.cs" />
       </list>
     </option>
   </component>
@@ -47,12 +71,24 @@
       <option name="presentableId" value="Default" />
       <updated>1729789751876</updated>
       <workItem from="1729789782623" duration="8364000" />
-      <workItem from="1729799153964" duration="2520000" />
+      <workItem from="1729799153964" duration="2788000" />
+      <workItem from="1729841425970" duration="642000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

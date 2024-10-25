@@ -4,7 +4,7 @@ using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Renderer))]
-[RequireComponent(typeof(Explosion))]
+[RequireComponent(typeof(Exploder))]
 public class Cube : MonoBehaviour
 {
     private const int MaxSplitChance = 100;
@@ -15,13 +15,13 @@ public class Cube : MonoBehaviour
     public event Action<Cube> Spliting;
     
     public float SplitChance { get; private set; }
-    public Explosion Explosion { get; private set; }
+    public Exploder Exploder { get; private set; }
     public Rigidbody Rigidbody { get; private set; }
 
     private void Awake()
     {
         _material = GetComponent<Renderer>().material;
-        Explosion = GetComponent<Explosion>();
+        Exploder = GetComponent<Exploder>();
         Rigidbody = GetComponent<Rigidbody>();
     }
 
@@ -46,7 +46,7 @@ public class Cube : MonoBehaviour
             Spliting?.Invoke(this);
         }
         
-        Explosion.Run();
+        Exploder.Run();
         
         Destroy(gameObject);
     }

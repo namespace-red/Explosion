@@ -26,7 +26,7 @@ public class CubeFactory : MonoBehaviour
     {
         Cube newCube = Instantiate(_cubePrefab, position, Quaternion.identity, _cubeParent);
         newCube.Init(scale, color, splitChance);
-        newCube.Explosion.Init(_explosionCalculator.GetForce(scale), _explosionCalculator.GetRadius(scale));
+        newCube.Exploder.Init(_explosionCalculator.GetForce(scale), _explosionCalculator.GetRadius(scale));
         
         return newCube;
     }
@@ -46,7 +46,7 @@ public class CubeFactory : MonoBehaviour
 
         Cube newCube = Create(position, scale, color, splitChance);
         
-        oldCube.Explosion.AddRepelled(newCube.Rigidbody);
+        oldCube.Exploder.AddRepelled(newCube.Rigidbody);
         
         return newCube;
     }

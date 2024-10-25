@@ -2,22 +2,22 @@ using UnityEngine;
 
 public class ExplosionCalculator
 {
-    private static Vector3 _startScale;
-    private static float _startExplosionForce;
-    private static float _startExplosionRadius;
+    private Vector3 _startScale;
+    private float _startForce;
+    private float _startRadius;
 
     public ExplosionCalculator(Vector3 startScale, float startExplosionForce, float startExplosionRadius)
     {
         _startScale = startScale;
-        _startExplosionForce = startExplosionForce;
-        _startExplosionRadius = startExplosionRadius;
+        _startForce = startExplosionForce;
+        _startRadius = startExplosionRadius;
     }
 
     public float GetForce(Vector3 scale)
-        => GetInverseValueByScale(scale, _startExplosionForce);
+        => GetInverseValueByScale(scale, _startForce);
 
     public float GetRadius(Vector3 scale)
-        => GetInverseValueByScale(scale, _startExplosionRadius);
+        => GetInverseValueByScale(scale, _startRadius);
 
     private float GetInverseValueByScale(Vector3 scale, float value)
     {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Explosion : MonoBehaviour
+public class Exploder : MonoBehaviour
 {
     private float _force;
     private float _radius;
